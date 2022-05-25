@@ -8,6 +8,7 @@ url="https://github.com/tooelitepete/yuzu.pacscript/releases/download/1.0/yuzu-m
 ##url="https://github.com/tooelitepete/yuzu.pacscript.git"##
 build_depends="qt5-base opus hicolor-icon-theme"
 breaks="${pkgname}"
+gives="yuzu.desktop yuzu.svg"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
@@ -30,7 +31,7 @@ install() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
-  # Install bemenu-git
+  # Install yuzu
   sudo make install DESTDIR="${pkgdir}"
 }
 
