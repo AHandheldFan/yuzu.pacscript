@@ -4,7 +4,8 @@ name="yuzu-mainline-bin-git"
 pkgname="yuzu-mainline-bin"
 pkgdir="/usr/src/pacstall/${name}"
 description="Yuzu Switch Emu (bin release)"
-url="https://github.com/tooelitepete/yuzu.pacscript.git"
+url="https://github.com/tooelitepete/yuzu.pacscript/releases/download/1.0/yuzu-mainline-bin.tar.gz"
+##url="https://github.com/tooelitepete/yuzu.pacscript.git"##
 build_depends="qt5-base opus hicolor-icon-theme"
 breaks="${pkgname}"
 
